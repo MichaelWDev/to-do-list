@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    margin: 0;
-    font-weight: 300;
-    font-size: 1.5rem;
+    margin:           0;
+    font-weight:      300;
+    font-size:        1.5rem;
     background-color: rgb(34, 32, 32);
-    color: white;
-    display: grid;
-    grid: "header header header header" auto
-          "...... lists  active ......" auto /
-          1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
+    color:            white;
+    display:          grid;
+    font-family:     'Roboto', sans-serif;
 
-    font-family: 'Roboto', sans-serif;
+    grid: "header header header header" auto
+          "...... lists  active ......" auto
+          / 1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
 }
 
 .title {
-    grid-area: header;
-    text-align: center;
-    font-size: calc(7vw + 2rem);
-    font-weight: 900;
+    grid-area:        header;
+    text-align:       center;
+    font-size:        calc(7vw + 2rem);
+    font-weight:      900;
     background-color: maroon;
-    color: rgba(255, 255, 255);
-    letter-spacing: 2px;
-    margin: -0.2em 0 0.5em;
+    color:            rgba(255, 255, 255);
+    letter-spacing:   2px;
+    margin:           -0.2em 0 0.5em;
 }
 
 .all-tasks {
@@ -30,9 +30,9 @@ body {
 }
 
 .task-list {
-    font-size: 1.2rem;
-    line-height: 1.7;
-    list-style: circle;
+    font-size:    1.2rem;
+    line-height:  1.7;
+    list-style:   circle;
     padding-left: 1.1em;
 }
 
@@ -49,18 +49,18 @@ form {
 }
 
 .btn {
-    cursor: pointer;
+    cursor:     pointer;
     background: 0;
-    border: 0;
-    padding: 0;
-    color: inherit;
+    border:     0;
+    padding:    0;
+    color:      inherit;
 }
 
 .btn.create {
-    font-size: 1.5rem;
-    font-weight: 900;
+    font-size:    1.5rem;
+    font-weight:  900;
     margin-right: 0.25em;
-    transition: opacity 250ms ease-in;
+    transition:   opacity 250ms ease-in;
 }
 
 .btn.create:hover {
@@ -68,8 +68,8 @@ form {
 }
 
 .btn.delete {
-    opacity: 0.7;
-    font-size: 1rem;
+    opacity:    0.7;
+    font-size:  1rem;
     transition: color 200ms;
 }
 
@@ -78,15 +78,15 @@ form {
 }
 
 .new {
-    background: transparent;
-    border: 0;
-    color: inherit;
+    background:    transparent;
+    border:        0;
+    color:         inherit;
     border-bottom: 1px solid currentColor;
-    font-size: inherit;
-    outline: none;
-    padding: 0.25em;
-    transition: border-bottom 150ms ease-in;
-    order: 2;
+    font-size:     inherit;
+    outline:       none;
+    padding:       0.25em;
+    transition:    border-bottom 150ms ease-in;
+    order:         2;
 }
 
 .new::placeholder {
@@ -114,17 +114,17 @@ form {
 }
 
 .todo-list {
-    --spacer: 2rem;
-    grid-area: active;
+    --spacer:   2rem;
+    grid-area:  active;
     background: rgb(255, 255, 255);
-    color: black;
+    color:      black;
 }
 
 .todo-header {
-    padding: var(--spacer);
-    background: maroon;
-    display: flex;
-    align-items: center;
+    padding:         var(--spacer);
+    background:      maroon;
+    display:         flex;
+    align-items:     center;
     justify-content: space-between;
 }
 
@@ -133,12 +133,12 @@ form {
 }
 
 .task-count {
-    margin: 0;
+    margin:    0;
     font-size: 1rem;
 }
 
 .todo-body {
-    padding: var(--spacer);
+    padding:  var(--spacer);
     position: relative;
 }
 
@@ -147,55 +147,55 @@ form {
 }
 
 [type="checkbox"] {
-    opacity: 0;
+    opacity:  0;
     position: absolute;
 }
 
 .task label {
-    display: flex-inline;
+    display:     flex-inline;
     align-items: center;
-    position: relative;
+    position:    relative;
 }
 
 .task {
-    position: relative;
+    position:      relative;
     margin-bottom: 1.25em;
 }
 
 .task::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -0.5em;
-    height: 1px;
+    content:    "";
+    position:   absolute;
+    right:      0;
+    left:       0;
+    bottom:     -0.5em;
+    height:     1px;
     background: currentColor;
-    opacity: 0.1;
+    opacity:    0.1;
 }
 
 .custom-checkbox {
-    --size: 0.75em;
-    display: inline-block;
-    width: var(--size);
-    height: var(--size);
-    margin-right: var(--size);
-    cursor: pointer;
-    border: 2px solid black;
+    --size:        0.75em;
+    display:       inline-block;
+    width:         var(--size);
+    height:        var(--size);
+    margin-right:  var(--size);
+    cursor:        pointer;
+    border:        2px solid black;
     border-radius: 50%;
-    transform: scale(1);
-    transition: transform 300ms ease-in-out;
+    transform:     scale(1);
+    transition:    transform 300ms ease-in-out;
 }
 
 .task:hover .custom-checkbox, [type="checkbox"]:focus + label .custom-checkbox {
     transform: scale(1.2);
-    color: rgb(0, 132, 255);
-    border: 2px solid rgb(0, 132, 255);
+    color:     rgb(0, 132, 255);
+    border:    2px solid rgb(0, 132, 255);
 }
 
 [type="checkbox"]:checked + label .custom-checkbox {
-    background: rgb(0, 132, 255);
+    background:   rgb(0, 132, 255);
     border-color: rgb(0, 132, 255);
-    box-shadow: inset 0 0 0px 2px white;
+    box-shadow:   inset 0 0 0px 2px white;
 }
 
 [type="checkbox"]:checked + label {
@@ -203,30 +203,30 @@ form {
 }
 
 .task label::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    left: 1.5em;
-    top: 50%;
-    height: 3px;
-    background: currentColor;
-    transform: scaleX(0);
+    content:           "";
+    position:         absolute;
+    left:             0;
+    right:            0;
+    left:             1.5em;
+    top:              50%;
+    height:           3px;
+    background:       currentColor;
+    transform:        scaleX(0);
     transform-origin: right;
-    transition: transform 150ms ease-in-out;
+    transition:       transform 150ms ease-in-out;
 }
 
 [type="checkbox"]:checked + label::after {
-    transform: scaleX(1);
+    transform:        scaleX(1);
     transform-origin: left;
 }
 
 .delete-stuff {
-    display: flex;
+    display:         flex;
     justify-content: space-evenly;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: -35px;
-    color: white;
+    position:        absolute;
+    width:           100%;
+    left:            0;
+    bottom:          -35px;
+    color:          white;
 }
