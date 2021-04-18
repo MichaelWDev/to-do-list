@@ -1,4 +1,4 @@
-const listContainer            = document.querySelector('[data-lists]');
+const listContainer            = document.querySelector('[data-list]');
 const newListForm              = document.querySelector('[data-new-list-form]');
 const newListInput             = document.querySelector('[data-new-list-input]');
 const listDisplayContainer     = document.querySelector('[data-list-display-container]');
