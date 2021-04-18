@@ -20,7 +20,7 @@ body {
     font-size:        calc(7vw + 2rem);
     font-weight:      900;
     background-color: maroon;
-    color:            black;
+    color:            white;
     letter-spacing:   2px;
     margin:           -0.2em 0 0.5em;
 }
@@ -103,10 +103,12 @@ form {
 
 .new.list {
     font-size: 1.2rem;
+    color: white;
 }
 
 .new.task {
     margin-bottom: 0;
+    color: maroon;
 }
 
 .active-list {
@@ -117,7 +119,7 @@ form {
     --spacer:   2rem;
     grid-area:  active;
     background: rgb(255, 255, 255);
-    color:      black;
+    color:      white;
 }
 
 .todo-header {
@@ -155,6 +157,7 @@ form {
     display:     flex-inline;
     align-items: center;
     position:    relative;
+    color: maroon;
 }
 
 .task {
