@@ -13,14 +13,16 @@
 
     <div class="all-tasks">
         <h2 class="task-list-title">List</h2>
-        <ul class="task-list">
+        <ul class="task-list" data-list>
+            <!--
             <li class="list-name active-list">Youtube</li>
             <li class="list-name">Work</li>
             <li class="list-name">Grocery</li>
+            -->
         </ul>
 
-        <form action="">
-            <input type="text" class="new list" placeholder="New List" aria-label="new list name">
+        <form action="" data-new-list-form>
+            <input data-new-list-input type="text" class="new list" placeholder="New List" aria-label="new list name">
             <button class="btn create" aria-label="create new list">+</button>
         </form>
     </div>
@@ -62,7 +64,7 @@
 
             <div class="delete-stuff">
                 <button class="btn delete">Clear Comleted</button>
-                <button class="btn delete">Delete List</button>
+                <button class="btn delete" data-delete-list-button>Delete List</button>
             </div>
         </div>
     </div>

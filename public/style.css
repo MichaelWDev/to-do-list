@@ -20,7 +20,7 @@ body {
     font-size:        calc(7vw + 2rem);
     font-weight:      900;
     background-color: maroon;
-    color:            rgba(255, 255, 255);
+    color:            black;
     letter-spacing:   2px;
     margin:           -0.2em 0 0.5em;
 }
@@ -143,7 +143,7 @@ form {
 }
 
 .new-task-creator .create {
-    color: rgb(0, 132, 255);
+    color: maroon;
 }
 
 [type="checkbox"] {
@@ -188,13 +188,13 @@ form {
 
 .task:hover .custom-checkbox, [type="checkbox"]:focus + label .custom-checkbox {
     transform: scale(1.2);
-    color:     rgb(0, 132, 255);
-    border:    2px solid rgb(0, 132, 255);
+    color:     maroon;
+    border:    2px solid maroon;
 }
 
 [type="checkbox"]:checked + label .custom-checkbox {
-    background:   rgb(0, 132, 255);
-    border-color: rgb(0, 132, 255);
+    background:   maroon;
+    border-color: maroon;
     box-shadow:   inset 0 0 0px 2px white;
 }
 
